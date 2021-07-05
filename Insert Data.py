@@ -1,4 +1,4 @@
-rtist_list = 'Horse the band,Slipknot,Numenorean,The Dillinger Escape Plan,Polythia,Mashmello,' \
+artist_list = 'Horse the band,Slipknot,Numenorean,The Dillinger Escape Plan,Polythia,Mashmello,' \
               'Svdden Death,Scooter,Timmy Trympet,Eskimo Calboy,As I Lay Dying,Silent Planet,' \
               'All That Remains,Norma Jean,Slipknot,SUM41,Nekrogoblikon'.lower()
 genres_list = 'Nintendo core,Nintendo core,New-Metal,melodic-black-Metal,Jazz-core,Math-Metal,' \

@@ -171,7 +171,7 @@ def fill_one_cell_table(list_format, table_name, key_cell):
 def fill_album_table(dict):
     for key in dict.keys():
         for name in dict[key].keys():
-            if not cell_is_exist('Name', 'Albums', name):
+            if not cell_is_exist('Name', 'Albums', name.lower()):
                 value_insert = f"'{name}', {dict[key][name]}"
                 insert_info('Albums', 'Name, PublishedYear', value_insert, type='text')
     return connection.execute(f'''SELECT * FROM Albums
@@ -234,7 +234,7 @@ def clean_table(table_name):
 
 if __name__ == '__main__':
     purge_all()
-    fill_one_cell_table(artist_list, 'Artists', 'Name')
+    print(fill_one_cell_table(artist_list, 'Artists', 'Name'))
     fill_one_cell_table(genres_list, 'Genres', 'Name')
     fill_album_table(album_dict)
     fill_song_table(songs_dict)
